@@ -6,8 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
+console.log(string1.indexOf('j'))
 
 
 /*******************************************
@@ -16,9 +15,11 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
-// Your code here...
-
+const newString2 = string2.charAt(2) +
+                    string2.charAt(string2.length -1)+
+                    string2.charAt(string2.length -1)+
+                    string2.charAt(string2.length -2)
+console.log(newString2)
 
 
 
@@ -28,9 +29,9 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
-
-// Your code here...
-
+const newString3 = string3.repeat(3)
+const batman = " Batman!"
+console.log(newString3 + batman)
 
 
 
@@ -42,7 +43,7 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+console.log(fruit.slice(7,13))
 
 
 /***************************************************
@@ -58,12 +59,20 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+if (funnyHeadline1.includes("oxygen")){
+    console.log("The string includes the word oxygen")
+} else {
+    console.log("The string does not include the word oxygen")
+}
 
 // Check the second headline
 // Your code here ...
 
-
+if (funnyHeadline2.includes("oxygen")){
+    console.log("The string includes the word oxygen")
+} else {
+    console.log("The string does not include the word oxygen")
+}
 
 /*******************************************
        Iteration 6 | String Length
@@ -75,7 +84,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
+console.log(string4.length)
 
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4.charAt(string4.length-1))
