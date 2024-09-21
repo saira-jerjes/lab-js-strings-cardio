@@ -39,12 +39,13 @@ console.log(newString3 + batman)
        Iteration 4 | Fruite Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
-
-const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
 // Your code here...
+const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 console.log(fruit.slice(7,13))
 
+//otro metodo
+const favFruit = fruit.split(" ")
+console.log(favFruit[1])
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
